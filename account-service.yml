@@ -1,5 +1,18 @@
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/metro?createDatabaseIfNotExist=true
+    username: root
+    password: pass
   application:
-    name: account-service
+    name: user-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
 server:
   port: 0
