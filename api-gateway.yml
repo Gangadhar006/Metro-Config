@@ -31,7 +31,7 @@ spring:
           uri: lb://TRANSACTION-SERVICE
 
         - id: eureka-server
-          uri: lb://EUREKA-SERVER
+          uri: http://localhost:8761
           predicates:
             - Path=/eureka/web
           filters:
