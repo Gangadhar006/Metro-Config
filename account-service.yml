@@ -3,8 +3,6 @@ spring:
     url: jdbc:mysql://localhost:3306/metro?createDatabaseIfNotExist=true
     username: root
     password: pass
-  application:
-    name: account-service
   jpa:
     hibernate:
       ddl-auto: update
