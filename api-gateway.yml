@@ -38,6 +38,6 @@ spring:
             - SetPath=/
 
         - id: discovery-server-static
-          uri: lb://EUREKA-SERVER
+          uri: http://localhost:8761
           predicates:
             - Path=/eureka/**
